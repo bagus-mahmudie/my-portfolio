@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 40">
+  <title>Lova</title>
+  <defs><linearGradient id="heart" x1="0" y1="0" x2="44" y2="25" gradientUnits="userSpaceOnUse"><stop stop-color="#b77cf4"/><stop offset="1" stop-color="#efa2c4"/></linearGradient></defs>
+  <path fill="url(#heart)" fill-rule="evenodd" d="M22 39 4.2 21.3C-2.4 14.8.3 3.2 9 .9 14.4-.6 19.2 2.2 22 6.2 25.1 1.5 30.7-.9 36 .9c8.1 2.8 10.5 13.7 3.8 20.4L22 39ZM11.2 17a4 4 0 1 0 8 0 4 4 0 0 0-8 0Zm15.4-4.4a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/>
+</svg>
