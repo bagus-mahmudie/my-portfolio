@@ -47,7 +47,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 84px;
+  scroll-padding-top: 60px;
 }
 body {
   margin: 0;
@@ -511,11 +511,21 @@ p {
   inset: 0 -5px;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.15) 30%, transparent 70%);
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.15) 30%,
+    transparent 70%
+  );
 }
 .dark .project-logo-surface::before {
   inset: 0 -5px;
-  background: radial-gradient(ellipse, rgba(16, 14, 24, 0.35) 0%, rgba(16, 14, 24, 0.15) 30%, transparent 70%);
+  background: radial-gradient(
+    ellipse,
+    rgba(16, 14, 24, 0.35) 0%,
+    rgba(16, 14, 24, 0.15) 30%,
+    transparent 70%
+  );
 }
 .project-logo-surface img {
   display: block;
