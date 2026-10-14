@@ -35,7 +35,7 @@ for (const route of ['robots', 'sitemap']) {
       assert.equal(seo.site.indexable ? result.rules.allow : result.rules.disallow, '/');
       assert.equal(Boolean(result.sitemap), seo.site.indexable);
     } else {
-      assert.equal(result.length, seo.site.indexable ? 7 : 0);
+      assert.equal(result.length, seo.site.indexable ? 8 : 0);
       if (result.length) {
         assert.equal(result[0].url, seo.site.url.href);
         assert.equal(result[1].url, new URL("/projects/uwais-pictures", seo.site.url).href);
@@ -44,6 +44,7 @@ for (const route of ['robots', 'sitemap']) {
         assert.equal(result[4].url, new URL("/projects/888living", seo.site.url).href);
         assert.equal(result[5].url, new URL("/projects/mitra-elang-bersatu", seo.site.url).href);
         assert.equal(result[6].url, new URL("/projects/nymgo", seo.site.url).href);
+        assert.equal(result[7].url, new URL("/projects/grand-ontama-dashboard", seo.site.url).href);
       }
     }
   }
