@@ -2,7 +2,7 @@
 .navTools, .back, .actions, .sectionTop { display: flex; align-items: center; }
 .navTools { gap: 24px; }
 .back { gap: 8px; font-size: 13px; color: var(--heading); }
-.main { width: min(1110px, calc(100% - 48px)); margin-inline: auto; padding-top: 150px; }
+.main { width: min(1110px, calc(100% - 48px)); margin-inline: auto; padding-top: 90px; }
 .hero { max-width: 780px; padding-bottom: 52px; }
 .hero h1 { color: var(--heading); font-size: clamp(40px, 6vw, 66px); margin: 12px 0 20px; }
 .intro { font-size: clamp(16px, 2vw, 20px); line-height: 1.8; }
@@ -32,7 +32,7 @@
 .dialog > img { display: block; width: 100%; height: auto; max-height: 72dvh; object-fit: contain; }
 .close { position: absolute; top: 6px; right: 8px; width: 36px; height: 36px; display: grid; place-items: center; border: 0; background: transparent; color: var(--heading); border-radius: 50%; }
 @media (max-width: 700px) {
-  .main { width: calc(100% - 36px); padding-top: 160px; }
+  .main { width: calc(100% - 36px); }
   .navTools { gap: 12px; }
   .back span { display: none; }
   .back { width: 34px; height: 34px; justify-content: center; }
