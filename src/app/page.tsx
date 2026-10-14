@@ -385,8 +385,8 @@ export default function Home() {
                         ? t.projects.hosted
                         : t.projects.local}
                   </small>
-                  {(item.link.endsWith("/uwais-pictures") || item.link.endsWith("/grand-ontama") || item.link.endsWith("/eggine-studio") || item.link.endsWith("/888living")) && (
-                    <Link className="button button-primary" href={item.link.endsWith("/888living") ? "/projects/888living" : item.link.endsWith("/eggine-studio") ? "/projects/eggine-studio" : item.link.endsWith("/grand-ontama") ? "/projects/grand-ontama" : "/projects/uwais-pictures"} aria-label={lang === "id" ? `Lihat detail ${item.title}` : `View ${item.title} details`}>
+                  {(item.link.endsWith("/uwais-pictures") || item.link.endsWith("/grand-ontama") || item.link.endsWith("/eggine-studio") || item.link.endsWith("/888living") || item.link.endsWith("/mitra-elang-bersatu")) && (
+                    <Link className="button button-primary" href={item.link.endsWith("/mitra-elang-bersatu") ? "/projects/mitra-elang-bersatu" : item.link.endsWith("/888living") ? "/projects/888living" : item.link.endsWith("/eggine-studio") ? "/projects/eggine-studio" : item.link.endsWith("/grand-ontama") ? "/projects/grand-ontama" : "/projects/uwais-pictures"} aria-label={lang === "id" ? `Lihat detail ${item.title}` : `View ${item.title} details`}>
                       {lang === "id" ? "Lihat Detail" : "View Details"}
                       <ArrowUpRight size={16} aria-hidden="true" />
                     </Link>
