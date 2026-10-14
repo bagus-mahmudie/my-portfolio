@@ -172,23 +172,23 @@ const screenshots = [
     },
   },
   {
-    id: "05-contact",
-    src: "/images/projects/uwais-pictures/05-contact.png",
-    width: 1257,
-    height: 707,
-    alt: {
-      id: "Halaman Kontak Kami dengan formulir pesan Uwais Pictures",
-      en: "Uwais Pictures contact page and message form",
-    },
-  },
-  {
-    id: "06-news",
-    src: "/images/projects/uwais-pictures/06-news.png",
+    id: "05-news",
+    src: "/images/projects/uwais-pictures/05-news.png",
     width: 1440,
     height: 810,
     alt: {
       id: "Halaman berita dan artikel terkait Uwais Pictures",
       en: "Uwais Pictures news and related articles",
+    },
+  },
+  {
+    id: "06-contact",
+    src: "/images/projects/uwais-pictures/06-contact.png",
+    width: 1257,
+    height: 707,
+    alt: {
+      id: "Halaman Kontak Kami dengan formulir pesan Uwais Pictures",
+      en: "Uwais Pictures contact page and message form",
     },
   },
 ];
