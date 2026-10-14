@@ -9,6 +9,10 @@
 .cord, .cap { position: absolute; pointer-events: none; }
 .cord { width: 4px; height: 80px; left: 22px; bottom: 64px; border-radius: 4px; background: #d1d5db; }
 .cap { width: 40px; height: 20px; left: 4px; top: -16px; border-radius: 20px 20px 0 0; background: #fff; border-bottom: 4px solid #d1d5db; }
+/* The cap stays in front of the bulb, including hover/press transforms. */
+.themeControl .cord { z-index: 0; }
+.themeControl .cap { z-index: 2; }
+.themeControl .button { position: relative; z-index: 1; }
 .button {
   width: 48px;
   height: 48px;
