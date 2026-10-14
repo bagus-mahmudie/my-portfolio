@@ -8,7 +8,7 @@
 .intro { font-size: clamp(16px, 2vw, 20px); line-height: 1.8; }
 .actions { gap: 12px; flex-wrap: wrap; }
 .sectionTop { justify-content: space-between; gap: 16px; margin-bottom: 18px; }
-.sectionTop h2 { margin: 0; font-size: 25px; }
+.sectionTop h2 { margin: 0; }
 .sectionTop > span { font-size: 12px; letter-spacing: 2px; }
 .preview figure { margin: 0; }
 .screenshot { display: block; aspect-ratio: 16 / 9; position: relative; width: 100%; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: zoom-in; }
@@ -42,7 +42,7 @@
   .feature { padding: 22px; }
   .technology > div { grid-template-columns: 1fr; gap: 8px; }
   .section { padding: 40px 0; }
-  .section h2, .overview h2 { font-size: 28px; }
+  .section h2, .overview h2, .sectionTop h2 { font-size: 28px; }
   .expand { right: 8px; bottom: 8px; padding: 6px 10px; font-size: 11px; }
 }
 
