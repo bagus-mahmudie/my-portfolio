@@ -50,8 +50,8 @@
 }
 .visible { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
 
-/* Keep the mobile lamp beneath the navbar and extend it when the bar affixes. */
-@media (max-width: 700px) {
+/* Keep the mobile and tablet lamp beneath the navbar and extend it when the bar affixes. */
+@media (max-width: 1024px) {
   .themeControl {
     top: 98px;
     z-index: 40;
