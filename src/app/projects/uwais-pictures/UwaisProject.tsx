@@ -15,7 +15,7 @@ const copy = {
     intro: "Ruang digital untuk memperkenalkan Uwais Pictures, menampilkan karya film, dan membagikan kabar terbaru dari rumah produksi.",
     website: "Buka Website", code: "Lihat Kode", theme: "Ganti tema",
     previous: "Gambar sebelumnya", next: "Gambar berikutnya", slide: "Gambar", carousel: "Galeri screenshot",
-    preview: "Tampilan website", caption: "Halaman depan Uwais Pictures dengan pengenalan studio dan pilihan karya film.",
+    preview: "Tampilan website",
     enlarge: "Perbesar screenshot", close: "Tutup screenshot", imageAlt: "Halaman depan Uwais Pictures dengan katalog film dan identitas rumah produksi",
     overview: "Tentang proyek", overviewText: "Website ini menyatukan profil rumah produksi, katalog film, dan berita dalam satu tempat. Pengunjung dapat menjelajahi karya, membaca informasi produksi, serta menghubungi tim melalui formulir kontak.",
     features: "Fitur utama",
@@ -40,7 +40,7 @@ const copy = {
     intro: "A digital space introducing Uwais Pictures, showcasing its films, and sharing the latest news from the production company.",
     website: "Visit Website", code: "View Code", theme: "Change theme",
     previous: "Previous image", next: "Next image", slide: "Image", carousel: "Screenshot carousel",
-    preview: "Website preview", caption: "The Uwais Pictures homepage introduces the studio and highlights its films.",
+    preview: "Website preview",
     enlarge: "Enlarge screenshot", close: "Close screenshot", imageAlt: "Uwais Pictures homepage showing the film catalog and production company identity",
     overview: "About the project", overviewText: "The website brings the production company profile, film catalog, and news together. Visitors can explore films, read production information, and reach the team through a contact form.",
     features: "Key features",
@@ -124,17 +124,16 @@ export default function UwaisProject() {
                   </div>
                 ))}
               </div>
+              <button type="button" className={`${styles.navButton} ${styles.previous}`} onClick={() => moveSlide(-1)} aria-label={t.previous} aria-controls="uwais-screenshots"><ChevronLeft size={22} aria-hidden="true" /></button>
+              <button type="button" className={`${styles.navButton} ${styles.next}`} onClick={() => moveSlide(1)} aria-label={t.next} aria-controls="uwais-screenshots"><ChevronRight size={22} aria-hidden="true" /></button>
             </div>
             <div className={styles.carouselNav}>
-              <button type="button" className={styles.navButton} onClick={() => moveSlide(-1)} aria-label={t.previous} aria-controls="uwais-screenshots"><ChevronLeft size={22} aria-hidden="true" /></button>
               <div className={styles.dots}>
                 {screenshots.map((screenshot, index) => (
                   <button key={screenshot.id} type="button" className={styles.dot} onClick={() => setActiveIndex(index)} aria-label={`${t.slide} ${index + 1}`} aria-current={activeIndex === index ? "true" : undefined} aria-controls="uwais-screenshots" />
                 ))}
               </div>
-              <button type="button" className={styles.navButton} onClick={() => moveSlide(1)} aria-label={t.next} aria-controls="uwais-screenshots"><ChevronRight size={22} aria-hidden="true" /></button>
             </div>
-            <figcaption>{t.caption}</figcaption>
           </figure>
         </section>
 
@@ -169,7 +168,6 @@ export default function UwaisProject() {
       <dialog ref={dialog} className={styles.dialog} aria-label={t.preview} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }}>
         <button className={styles.close} onClick={() => dialog.current?.close()} aria-label={t.close} autoFocus><X size={22} aria-hidden="true" /></button>
         <Image src={activeScreenshot.src} alt={t.imageAlt} width={activeScreenshot.width} height={activeScreenshot.height} unoptimized />
-        <p>{t.caption}</p>
       </dialog>
     </div>
   );
