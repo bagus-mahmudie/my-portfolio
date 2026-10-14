@@ -358,12 +358,6 @@ export default function Home() {
                       <span key={tag}>{tag}</span>
                     ))}
                   </div>
-                  {item.link.endsWith("/uwais-pictures") && (
-                    <Link className="button button-primary" href="/projects/uwais-pictures" aria-label={lang === "id" ? "Lihat detail Uwais Pictures" : "View Uwais Pictures details"}>
-                      {lang === "id" ? "Lihat Detail" : "View Details"}
-                      <ArrowUpRight size={16} aria-hidden="true" />
-                    </Link>
-                  )}
                   <div className="project-links">
                     <a
                       href={item.link}
@@ -391,6 +385,12 @@ export default function Home() {
                         ? t.projects.hosted
                         : t.projects.local}
                   </small>
+                  {item.link.endsWith("/uwais-pictures") && (
+                    <Link className="button button-primary" href="/projects/uwais-pictures" aria-label={lang === "id" ? "Lihat detail Uwais Pictures" : "View Uwais Pictures details"}>
+                      {lang === "id" ? "Lihat Detail" : "View Details"}
+                      <ArrowUpRight size={16} aria-hidden="true" />
+                    </Link>
+                  )}
                 </div>
               </article>
             ))}
