@@ -27,10 +27,10 @@
 .technology dt { font-weight: 600; color: var(--heading); }
 .technology dd { margin: 0; }
 .footer { border-top: 1px solid var(--line); padding: 24px 72px 24px 24px; text-align: center; font-size: 12px; }
-.dialog { position: fixed; inset: 0; margin: auto; width: min(1000px, 94vw); max-height: 92dvh; padding: 48px 16px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--page); color: var(--text); overflow: auto; }
+.dialog { position: fixed; inset: 0; margin: auto; width: min(1000px, 94vw); max-height: 92dvh; padding: 48px 16px 16px; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: var(--text); overflow: auto; }
 .dialog::backdrop { background: rgb(0 0 0 / .8); }
 .dialog > img { display: block; width: 100%; height: auto; max-height: 72dvh; object-fit: contain; }
-.close { position: absolute; top: 6px; right: 8px; width: 36px; height: 36px; display: grid; place-items: center; border: 0; background: transparent; color: var(--heading); border-radius: 50%; }
+.close { position: absolute; top: 6px; right: 8px; width: 36px; height: 36px; display: grid; place-items: center; border: 0; background: transparent; color: #fff; border-radius: 50%; }
 @media (max-width: 700px) {
   .main { width: calc(100% - 36px); }
   .navTools { gap: 12px; }
