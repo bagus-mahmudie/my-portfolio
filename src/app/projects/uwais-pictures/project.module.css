@@ -5,7 +5,7 @@
 .main { width: min(1110px, calc(100% - 48px)); margin-inline: auto; padding-top: 90px; }
 .hero { width: 100%; padding-bottom: 52px; }
 .hero h1 { color: var(--heading); font-size: clamp(40px, 6vw, 66px); margin: 12px 0 20px; }
-.intro { font-size: 15px; line-height: 1.8; }
+.intro { font-size: 15px; line-height: 1.8; margin-bottom: 24px; }
 .actions { gap: 12px; flex-wrap: wrap; }
 .sectionTop { justify-content: space-between; gap: 16px; margin-bottom: 18px; }
 .sectionTop h2 { margin: 0; }
