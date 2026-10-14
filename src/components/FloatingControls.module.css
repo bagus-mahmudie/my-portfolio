@@ -53,19 +53,19 @@
 /* Keep the mobile lamp beneath the navbar and extend it when the bar affixes. */
 @media (max-width: 700px) {
   .themeControl {
-    top: 88px;
+    top: 98px;
     z-index: 40;
     transition: top .4s ease;
   }
   .cord {
-    height: 8px;
+    height: 18px;
     transition: height .4s ease;
   }
   :global(.site-nav.affixed) ~ .themeControl {
-    top: 108px;
+    top: 118px;
   }
   :global(.site-nav.affixed) ~ .themeControl .cord {
-    height: 44px;
+    height: 54px;
   }
 }
 
