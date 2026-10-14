@@ -21,7 +21,7 @@ const copy = {
     back: "Kembali ke proyek",
     nav: "Navigasi detail proyek",
     intro:
-      "Ruang digital untuk memperkenalkan Uwais Pictures, menampilkan karya film, dan membagikan kabar terbaru dari rumah produksi.",
+      "Ruang digital untuk memperkenalkan Uwais Pictures, menampilkan karya film, dan membagikan kabar terbaru dari rumah produksi. Melalui website ini, pengunjung dapat mengenal tim di balik layar, menjelajahi katalog serta trailer film, dan menghubungi rumah produksi untuk informasi maupun peluang kolaborasi.",
     website: "Buka Website",
     code: "Lihat Kode",
     theme: "Ganti tema",
@@ -78,7 +78,7 @@ const copy = {
     back: "Back to projects",
     nav: "Project detail navigation",
     intro:
-      "A digital space introducing Uwais Pictures, showcasing its films, and sharing the latest news from the production company.",
+      "A digital space introducing Uwais Pictures, showcasing its films, and sharing the latest news from the production company. Visitors can meet the team behind the scenes, explore the film catalog and trailers, and contact the production company for further information or collaboration opportunities.",
     website: "Visit Website",
     code: "View Code",
     theme: "Change theme",
