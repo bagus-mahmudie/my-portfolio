@@ -385,8 +385,8 @@ export default function Home() {
                         ? t.projects.hosted
                         : t.projects.local}
                   </small>
-                  {item.link.endsWith("/uwais-pictures") && (
-                    <Link className="button button-primary" href="/projects/uwais-pictures" aria-label={lang === "id" ? "Lihat detail Uwais Pictures" : "View Uwais Pictures details"}>
+                  {(item.link.endsWith("/uwais-pictures") || item.link.endsWith("/grand-ontama")) && (
+                    <Link className="button button-primary" href={item.link.endsWith("/grand-ontama") ? "/projects/grand-ontama" : "/projects/uwais-pictures"} aria-label={lang === "id" ? `Lihat detail ${item.title}` : `View ${item.title} details`}>
                       {lang === "id" ? "Lihat Detail" : "View Details"}
                       <ArrowUpRight size={16} aria-hidden="true" />
                     </Link>
