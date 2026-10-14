@@ -4,7 +4,7 @@ import UwaisProject from "./UwaisProject";
 
 const path = "/projects/uwais-pictures";
 const description = "Detail proyek website Uwais Pictures: katalog film, berita, konten ID/EN, dan formulir kontak. Dibangun dengan Eleventy, Nunjucks, Tailwind CSS, dan PHP.";
-const image = "/images/project-backgrounds/uwais-pictures.png";
+const image = "/images/projects/uwais-pictures/01-home.png";
 
 export const metadata: Metadata = {
   title: "Uwais Pictures — Detail Proyek",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: path,
     siteName: "Bagus Mahmudie Portfolio",
     locale: "id_ID",
-    images: [{ url: image, width: 879, height: 586, alt: "Preview website Uwais Pictures" }],
+    images: [{ url: image, width: 1511, height: 850, alt: "Preview website Uwais Pictures" }],
   },
   twitter: {
     card: "summary_large_image",

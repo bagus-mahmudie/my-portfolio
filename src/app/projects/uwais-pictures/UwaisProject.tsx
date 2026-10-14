@@ -16,7 +16,7 @@ const copy = {
     website: "Buka Website", code: "Lihat Kode", theme: "Ganti tema",
     previous: "Gambar sebelumnya", next: "Gambar berikutnya", slide: "Gambar", carousel: "Galeri screenshot",
     preview: "Tampilan website",
-    enlarge: "Perbesar screenshot", close: "Tutup screenshot", imageAlt: "Halaman depan Uwais Pictures dengan katalog film dan identitas rumah produksi",
+    enlarge: "Perbesar screenshot", close: "Tutup screenshot",
     overview: "Tentang proyek", overviewText: "Website ini menyatukan profil rumah produksi, katalog film, dan berita dalam satu tempat. Pengunjung dapat menjelajahi karya, membaca informasi produksi, serta menghubungi tim melalui formulir kontak.",
     features: "Fitur utama",
     featureList: [
@@ -41,7 +41,7 @@ const copy = {
     website: "Visit Website", code: "View Code", theme: "Change theme",
     previous: "Previous image", next: "Next image", slide: "Image", carousel: "Screenshot carousel",
     preview: "Website preview",
-    enlarge: "Enlarge screenshot", close: "Close screenshot", imageAlt: "Uwais Pictures homepage showing the film catalog and production company identity",
+    enlarge: "Enlarge screenshot", close: "Close screenshot",
     overview: "About the project", overviewText: "The website brings the production company profile, film catalog, and news together. Visitors can explore films, read production information, and reach the team through a contact form.",
     features: "Key features",
     featureList: [
@@ -62,11 +62,67 @@ const copy = {
   },
 };
 
-// Replace these temporary duplicate entries with new screenshot paths and dimensions.
 const screenshots = [
-  { id: "preview-1", src: "/images/project-backgrounds/uwais-pictures.png", width: 879, height: 586 },
-  { id: "preview-2", src: "/images/project-backgrounds/uwais-pictures.png", width: 879, height: 586 },
-  { id: "preview-3", src: "/images/project-backgrounds/uwais-pictures.png", width: 879, height: 586 },
+  {
+    "id": "01-home",
+    "src": "/images/projects/uwais-pictures/01-home.png",
+    "width": 1511,
+    "height": 850,
+    "alt": {
+      "id": "Beranda Uwais Pictures dengan pengenalan studio dan film pilihan",
+      "en": "Uwais Pictures homepage with studio introduction and featured films"
+    }
+  },
+  {
+    "id": "02-about",
+    "src": "/images/projects/uwais-pictures/02-about.png",
+    "width": 1522,
+    "height": 856,
+    "alt": {
+      "id": "Halaman Tentang Kami dengan profil pimpinan Uwais Pictures",
+      "en": "About page featuring the Uwais Pictures leadership team"
+    }
+  },
+  {
+    "id": "03-films",
+    "src": "/images/projects/uwais-pictures/03-films.png",
+    "width": 1524,
+    "height": 857,
+    "alt": {
+      "id": "Katalog film Uwais Pictures: Timur, Ikatan Darah, dan Pasung",
+      "en": "Uwais Pictures film catalog: Timur, Ikatan Darah, and Pasung"
+    }
+  },
+  {
+    "id": "04-news",
+    "src": "/images/projects/uwais-pictures/04-news.png",
+    "width": 1440,
+    "height": 810,
+    "alt": {
+      "id": "Halaman berita dan artikel terkait Uwais Pictures",
+      "en": "Uwais Pictures news and related articles"
+    }
+  },
+  {
+    "id": "05-contact",
+    "src": "/images/projects/uwais-pictures/05-contact.png",
+    "width": 1257,
+    "height": 707,
+    "alt": {
+      "id": "Halaman Kontak Kami dengan formulir pesan Uwais Pictures",
+      "en": "Uwais Pictures contact page and message form"
+    }
+  },
+  {
+    "id": "06-film-detail",
+    "src": "/images/projects/uwais-pictures/06-film-detail.png",
+    "width": 1207,
+    "height": 679,
+    "alt": {
+      "id": "Halaman detail film Ikatan Darah dengan informasi dan trailer",
+      "en": "Ikatan Darah film detail page with information and trailer"
+    }
+  }
 ];
 
 export default function UwaisProject() {
@@ -118,7 +174,7 @@ export default function UwaisProject() {
                 {screenshots.map((screenshot, index) => (
                   <div key={screenshot.id} className={styles.slide} role="group" aria-label={`${t.slide} ${index + 1} / ${screenshots.length}`} aria-hidden={index !== activeIndex} inert={index !== activeIndex}>
                     <button className={styles.screenshot} onClick={() => dialog.current?.showModal()} aria-label={t.enlarge} aria-haspopup="dialog">
-                      <Image src={screenshot.src} alt={t.imageAlt} width={screenshot.width} height={screenshot.height} sizes="(max-width: 700px) calc(100vw - 36px), (max-width: 1158px) calc(100vw - 48px), 1110px" priority={index === 0} unoptimized />
+                      <Image src={screenshot.src} alt={screenshot.alt[lang]} width={screenshot.width} height={screenshot.height} sizes="(max-width: 700px) calc(100vw - 36px), (max-width: 1158px) calc(100vw - 48px), 1110px" priority={index === 0} unoptimized />
                       <span className={styles.expand}><Expand size={16} aria-hidden="true" />{t.enlarge}</span>
                     </button>
                   </div>
@@ -167,7 +223,7 @@ export default function UwaisProject() {
 
       <dialog ref={dialog} className={styles.dialog} aria-label={t.preview} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }}>
         <button className={styles.close} onClick={() => dialog.current?.close()} aria-label={t.close} autoFocus><X size={22} aria-hidden="true" /></button>
-        <Image src={activeScreenshot.src} alt={t.imageAlt} width={activeScreenshot.width} height={activeScreenshot.height} unoptimized />
+        <Image src={activeScreenshot.src} alt={activeScreenshot.alt[lang]} width={activeScreenshot.width} height={activeScreenshot.height} unoptimized />
       </dialog>
     </div>
   );
