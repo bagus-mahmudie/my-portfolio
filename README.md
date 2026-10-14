@@ -13,6 +13,7 @@ Portofolio pribadi **Bagus Mahmudie**, Full-Stack Web Developer berbasis di Jaka
 - Konten bahasa Indonesia dan Inggris.
 - Carousel teknologi dengan animasi berulang, pause saat hover/focus, dan dukungan reduced motion.
 - Galeri 19 proyek dengan filter website/aplikasi, tombol tampilkan lainnya, tautan repository, dan website yang tersedia.
+- Halaman [detail Uwais Pictures](https://bagus-mahmudie-portfolio.vercel.app/projects/uwais-pictures) dengan screenshot yang bisa diperbesar, fitur, dan penjelasan teknologi dalam ID/EN.
 - Background kartu dari preview proyek serta logo yang disesuaikan dengan tema.
 - Form kontak yang membuka Gmail compose berisi nama, email, dan pesan pengunjung.
 - Tautan GitHub, LinkedIn, WhatsApp, dan email; tombol kembali ke atas.

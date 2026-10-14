@@ -1,0 +1,59 @@
+.page { min-height: 100svh; }
+.navTools, .back, .actions, .meta, .sectionTop, .returnLink { display: flex; align-items: center; }
+.navTools { gap: 24px; }
+.back { gap: 8px; font-size: 13px; color: var(--heading); }
+.main { width: min(1110px, calc(100% - 48px)); margin-inline: auto; padding-top: 150px; }
+.hero { max-width: 780px; padding-bottom: 52px; }
+.hero h1 { color: var(--heading); font-size: clamp(40px, 6vw, 66px); margin: 12px 0 20px; }
+.intro { font-size: clamp(16px, 2vw, 20px); line-height: 1.8; }
+.meta { gap: 12px 24px; flex-wrap: wrap; font-size: 12px; margin: 24px 0; }
+.meta > span { padding: 6px 12px; border: 1px solid var(--line); border-radius: 20px; }
+.status::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #70a58b; margin-right: 8px; }
+.actions { gap: 12px; flex-wrap: wrap; }
+.sectionTop { justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.sectionTop h2 { margin: 0; font-size: 25px; }
+.sectionTop > span { font-size: 12px; letter-spacing: 2px; }
+.preview figure { margin: 0; }
+.screenshot { display: block; position: relative; width: 100%; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: zoom-in; }
+.screenshot > img { display: block; width: 100%; height: auto; }
+.expand { position: absolute; right: 16px; bottom: 16px; display: flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 24px; color: var(--heading); background: var(--page); font-size: 12px; }
+.preview figcaption { font-size: 12px; margin-top: 14px; text-align: center; }
+.overview { display: grid; grid-template-columns: 1fr 2fr; gap: 48px; padding: 64px 0; border-bottom: 1px solid var(--line); }
+.overview p { margin: 0; line-height: 1.9; }
+.section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+.features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 28px; }
+.feature { border: 1px solid var(--line); border-radius: 12px; padding: 28px; background: var(--surface); }
+.number { font-size: 12px; color: var(--heading); letter-spacing: 2px; }
+.feature h3 { margin: 16px 0 12px; }
+.feature p { margin: 0; font-size: 14px; }
+.technology { margin: 28px 0 0; }
+.technology > div { display: grid; grid-template-columns: 220px 1fr; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+.technology dt { font-weight: 600; color: var(--heading); }
+.technology dd { margin: 0; }
+.architecture { margin-top: 24px; background: var(--surface); padding: 28px; border-radius: 12px; }
+.architecture h3 { margin: 0 0 12px; }
+.architecture p { margin: 0; }
+.cta { text-align: center; padding: 64px 0; }
+.cta .actions { justify-content: center; margin: 24px 0; }
+.returnLink { justify-content: center; gap: 8px; font-size: 13px; color: var(--heading); }
+.footer { border-top: 1px solid var(--line); padding: 24px 72px 24px 24px; text-align: center; font-size: 12px; }
+.dialog { position: fixed; inset: 0; margin: auto; width: min(1000px, 94vw); max-height: 92dvh; padding: 48px 16px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--page); color: var(--text); overflow: auto; }
+.dialog::backdrop { background: rgb(0 0 0 / .8); }
+.dialog > img { display: block; width: 100%; height: auto; max-height: 72dvh; object-fit: contain; }
+.dialog p { font-size: 12px; margin: 12px 0 0; text-align: center; }
+.close { position: absolute; top: 6px; right: 8px; width: 36px; height: 36px; display: grid; place-items: center; border: 0; background: transparent; color: var(--heading); border-radius: 50%; }
+@media (max-width: 700px) {
+  .main { width: calc(100% - 36px); padding-top: 160px; }
+  .navTools { gap: 12px; }
+  .back span { display: none; }
+  .back { width: 34px; height: 34px; justify-content: center; }
+  .hero { padding-bottom: 36px; }
+  .overview { grid-template-columns: 1fr; gap: 8px; padding: 40px 0; }
+  .features { grid-template-columns: 1fr; gap: 16px; }
+  .feature { padding: 22px; }
+  .technology > div { grid-template-columns: 1fr; gap: 8px; }
+  .section { padding: 40px 0; }
+  .section h2, .overview h2, .cta h2 { font-size: 28px; }
+  .expand { right: 8px; bottom: 8px; padding: 6px 10px; font-size: 11px; }
+  .architecture { padding: 22px; }
+}
