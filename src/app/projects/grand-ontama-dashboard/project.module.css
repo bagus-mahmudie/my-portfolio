@@ -56,7 +56,7 @@
 .navButton:focus-visible { outline-offset: 2px; }
 .navButton:hover { background: var(--heading); color: var(--page); }
 .dots { display: flex; align-items: center; gap: 0; }
-.dot { display: grid; place-items: center; width: 24px; height: 44px; padding: 0; border: 0; background: transparent; }
+.dot { display: grid; place-items: center; width: 20px; height: 44px; padding: 0; border: 0; background: transparent; }
 .dot::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--text); opacity: .35; transition: opacity .2s, transform .2s; }
 .dot[aria-current="true"]::before { background: var(--heading); opacity: 1; transform: scale(1.3); }
 .screenshot:focus-visible { outline-offset: -5px; }
