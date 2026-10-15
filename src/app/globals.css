@@ -813,6 +813,10 @@ p {
   .project-grid {
     gap: 18px;
   }
+  .project-image .project-backdrop {
+    object-fit: cover;
+    transform: scale(1.04);
+  }
   .project-overlay {
     padding: 18px;
   }
