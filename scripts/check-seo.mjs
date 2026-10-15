@@ -35,7 +35,7 @@ for (const route of ['robots', 'sitemap']) {
       assert.equal(seo.site.indexable ? result.rules.allow : result.rules.disallow, '/');
       assert.equal(Boolean(result.sitemap), seo.site.indexable);
     } else {
-      assert.equal(result.length, seo.site.indexable ? 13 : 0);
+      assert.equal(result.length, seo.site.indexable ? 14 : 0);
       if (result.length) {
         assert.equal(result[0].url, seo.site.url.href);
         assert.equal(result[1].url, new URL("/projects/uwais-pictures", seo.site.url).href);
@@ -50,6 +50,7 @@ for (const route of ['robots', 'sitemap']) {
         assert.equal(result[10].url, new URL("/projects/catkuji", seo.site.url).href);
         assert.equal(result[11].url, new URL("/projects/project-management", seo.site.url).href);
         assert.equal(result[12].url, new URL("/projects/auto-trust", seo.site.url).href);
+        assert.equal(result[13].url, new URL("/projects/lova-dating-site", seo.site.url).href);
       }
     }
   }
